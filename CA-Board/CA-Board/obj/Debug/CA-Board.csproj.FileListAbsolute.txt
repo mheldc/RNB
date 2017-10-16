@@ -1,0 +1,13 @@
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\bin\Debug\CA-Board.exe.config
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\bin\Debug\CA-Board.exe
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\bin\Debug\CA-Board.pdb
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\bin\Debug\MySql.Data.dll
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\bin\Debug\MySql.Data.xml
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA-Board.csprojResolveAssemblyReference.cache
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA_Board.frmGuestBoard.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA_Board.frmMain.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA_Board.frmSvcBoard.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA_Board.Properties.Resources.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA-Board.csproj.GenerateResource.Cache
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA-Board.exe
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Board\CA-Board\obj\Debug\CA-Board.pdb
