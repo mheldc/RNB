@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CA-Turnstile.exe" version="1.0.0.7" publicKeyToken="dc5139de56fa8bd2" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="server_lightning.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CA-Turnstile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CA-Turnstile.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CA-Turnstile.exe" size="57792">
+      <assemblyIdentity name="CA-Turnstile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rZBvW3nq9iDUsPW7FDHgEUg7a3DLakcng2YzO1WdHvM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="457216">
+      <assemblyIdentity name="MySql.Data" version="6.9.6.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vp/0k3J7s9ugl4aq8lI/oYVJVNPbUyQ7qJjLrWRUSa0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CA-Turnstile.exe.config" size="1470">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3QnMYSfWoQY8mkXMutsQiB3R47s2HftRVR6eCiWRIyY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="server_lightning.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R84Byc4bKZSafchgzpQoRfV7HfnYR4P9XS4N92qYiuo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MHELDC-PC\Romel" issuerKeyHash="779bef9d2957ff73b8000d25e8be1480c426c388" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>P5MMx2iQXn1oR3QME8BeiSM0mhzCpfI1dvaAK210Ltk=</DigestValue></Reference></SignedInfo><SignatureValue>MTQTbwJAcLFatevFqM84I41BHaq5L3cUVwCepeZu8h6agZHLya9uau19sXekQly7c1TFaHXqRUYdg+G6nSzABdjNP11pxdCeJw7YK7lb8jy2RK7/vj1NFtHwJ5eEFS1tmpj0LD+G8uaoieMZRyMWQxrIJVAR56lRcbipoCPbL70=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yGX4BANkqg2v1jvPsBLQyWESJgR9kYR3hc0QhHPXpSCIb+mNgRc2XTqHzec7R1WCt69fMupkz39Z9QjQYi7f15oXmpBrPVrreKL1Xp7SzJpZWe19/JtlardJIwsiUG3I0JjZrzaCe+RuQTwpIRZ9puDzfbRv0acnDwb9/ZOY+nM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d92e746d2b80f67635f2a5c21c9a3423895ec0130c7447687d5e9068c70c933f" Description="" Url=""><as:assemblyIdentity name="CA-Turnstile.exe" version="1.0.0.7" publicKeyToken="dc5139de56fa8bd2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MHELDC-PC\Romel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>XZc59wCi2b1ECBi8wqQrNmfidsKRbVZH6K8zZTT7+/4=</DigestValue></Reference></SignedInfo><SignatureValue>bdpW+e72U7kV4X7R21GxOnaEpHOuFrLG1rNTCZyIjM90Px2XK4FybMZkR9Z0XVK4zDlIniolwrs3HhfwkXKYhGDI7Q2QaBjctssK6zgHURnys0SqeRbU2Vwth6Qn5PDWX3wRs+dqihLa1Oszwn3fvVXgSZyOJ2KkUOcgEs8q8VM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yGX4BANkqg2v1jvPsBLQyWESJgR9kYR3hc0QhHPXpSCIb+mNgRc2XTqHzec7R1WCt69fMupkz39Z9QjQYi7f15oXmpBrPVrreKL1Xp7SzJpZWe19/JtlardJIwsiUG3I0JjZrzaCe+RuQTwpIRZ9puDzfbRv0acnDwb9/ZOY+nM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQfBfj5mw2iYhEYW+KLXJB/DANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ATQBIAEUATABEAEMALQBQAEMAXABSAG8AbQBlAGwwHhcNMTcwNDExMDU0MzEzWhcNMTgwNDExMTE0MzEzWjApMScwJQYDVQQDHh4ATQBIAEUATABEAEMALQBQAEMAXABSAG8AbQBlAGwwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMhl+AQDZKoNr9Y7z7AS0MlhEiYEfZGEd4XNEIRz16UgiG/pjYEXNl06h83nO0dVgrevXzLqZM9/WfUI0GIu39eaF5qQaz1a63ii9V6e0syaWVntffybZWq3SSMLIlBtyNCY2a82gnvkbkE8KSEWfabg8320b9GnJw8G/f2TmPpzAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAn90ny3BfO9ECNDxf1kMZPuEJynRRJ46BSWmgNaJsNYqmAym3fIX9RLHSYFLqqtIiyHdtNN7EIDmCHUTq394S581s7HK/B+PDbUgI7lF8ra+72aj6QEdZq9ICdLr79OZCm1h4NHUN2rNrTr/VrsXvkNgnXhPZqh2cRjnGcXx7V0Y=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

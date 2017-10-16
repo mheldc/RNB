@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="CA_Turnstile.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+    <applicationSettings>
+        <CA_Turnstile.Properties.Settings>
+            <setting name="ServerHost" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="DefaultDb" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="DefaultPort" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="LoginId" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="LoginPw" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="SerialKey" serializeAs="String">
+                <value />
+            </setting>
+        </CA_Turnstile.Properties.Settings>
+    </applicationSettings>
+</configuration>

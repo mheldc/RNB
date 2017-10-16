@@ -1,0 +1,15 @@
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\bin\Debug\CA-Turnstile.exe.config
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\bin\Debug\CA-Turnstile.exe.manifest
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\bin\Debug\CA-Turnstile.application
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\bin\Debug\CA-Turnstile.exe
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\bin\Debug\CA-Turnstile.pdb
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA-Turnstile.csprojResolveAssemblyReference.cache
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA_Turnstile.frmCATO.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA_Turnstile.frmCATOSettings.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA_Turnstile.frmLK.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA_Turnstile.Properties.Resources.resources
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA-Turnstile.csproj.GenerateResource.Cache
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA-Turnstile.exe.manifest
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA-Turnstile.application
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA-Turnstile.exe
+C:\Users\Romel\Documents\Visual Studio 2015\Projects\CA-Turnstile\CA-Turnstile\obj\Debug\CA-Turnstile.pdb
