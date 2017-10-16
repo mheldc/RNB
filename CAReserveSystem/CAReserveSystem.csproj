@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94800FC4-C80B-498E-8D6C-1D1C7DDF21E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAReserveSystem</RootNamespace>
+    <AssemblyName>CAReserveSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <HockeyAppResourceId>c185589122b4428bacc9438d46667b94</HockeyAppResourceId>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EAB1EB915602DFEB20EF0F2AAED92C09C32FDC82</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CAReserveSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>books.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsBnR.cs" />
+    <Compile Include="frmAccommodationsSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccommodationsSetup.Designer.cs">
+      <DependentUpon>frmAccommodationsSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBAddtionalGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBAddtionalGuest.Designer.cs">
+      <DependentUpon>frmBAddtionalGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingGuestLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingGuestLookup.Designer.cs">
+      <DependentUpon>frmBookingGuestLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingNew.Designer.cs">
+      <DependentUpon>frmBookingNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBPassIssuance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBPassIssuance.Designer.cs">
+      <DependentUpon>frmBPassIssuance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBooking.Designer.cs">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBPayment.Designer.cs">
+      <DependentUpon>frmBPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBRequestItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBRequestItems.Designer.cs">
+      <DependentUpon>frmBRequestItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBTransferAccommodation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBTransferAccommodation.Designer.cs">
+      <DependentUpon>frmBTransferAccommodation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuestsSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuestsSetup.Designer.cs">
+      <DependentUpon>frmGuestsSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventorySetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventorySetup.Designer.cs">
+      <DependentUpon>frmInventorySetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepGen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepGen.Designer.cs">
+      <DependentUpon>frmRepGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservation.Designer.cs">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservationNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservationNew.Designer.cs">
+      <DependentUpon>frmReservationNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignIn.Designer.cs">
+      <DependentUpon>frmSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemSetup.Designer.cs">
+      <DependentUpon>frmSystemSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdiCAMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiCAMain.Designer.cs">
+      <DependentUpon>mdiCAMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserSetup.Designer.cs">
+      <DependentUpon>frmUserSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reports\InventoryReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\SalesReportPerAccommodation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReportPerAccommodation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\SalesReportPerCashier.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReportPerCashier.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\BookingSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookingSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmAccommodationsSetup.resx">
+      <DependentUpon>frmAccommodationsSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBAddtionalGuest.resx">
+      <DependentUpon>frmBAddtionalGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBooking.resx">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookingGuestLookup.resx">
+      <DependentUpon>frmBookingGuestLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookingNew.resx">
+      <DependentUpon>frmBookingNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBPassIssuance.resx">
+      <DependentUpon>frmBPassIssuance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBPayment.resx">
+      <DependentUpon>frmBPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBRequestItems.resx">
+      <DependentUpon>frmBRequestItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBTransferAccommodation.resx">
+      <DependentUpon>frmBTransferAccommodation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuestsSetup.resx">
+      <DependentUpon>frmGuestsSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventorySetup.resx">
+      <DependentUpon>frmInventorySetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepGen.resx">
+      <DependentUpon>frmRepGen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservation.resx">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservationNew.resx">
+      <DependentUpon>frmReservationNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignIn.resx">
+      <DependentUpon>frmSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemSetup.resx">
+      <DependentUpon>frmSystemSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserSetup.resx">
+      <DependentUpon>frmUserSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiCAMain.resx">
+      <DependentUpon>mdiCAMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reports\InventoryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InventoryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\SalesReportPerAccommodation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReportPerAccommodation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\SalesReportPerCashier.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReportPerCashier.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\BookingSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BookingSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="CAReserveSystem_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="books.ico" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
